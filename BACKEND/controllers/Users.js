@@ -29,10 +29,6 @@ exports.loginUser = (req, res, next) => {
         .catch(error => res.status(500).json({ error }));
 };
 
-
-
-
-
 //Signup user function
 
 exports.signupUser = (req, res, next) => {
@@ -59,4 +55,3 @@ exports.signupUser = (req, res, next) => {
             res.status(510).json({ error })
         });
 }
-
