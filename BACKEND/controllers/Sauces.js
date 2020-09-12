@@ -1,7 +1,6 @@
 ﻿const sauces = require('../models/Sauces');
 const fs = require('fs');
 
-
 //Create a sauce
 
 exports.createSauce = (req, res, next) => {
@@ -21,12 +20,6 @@ exports.createSauce = (req, res, next) => {
         .catch(error => res.status(400).json({ error }));
 }
 
-
-
-
-
-
-
 //Delete a sauce
 
 exports.deleteSauce = (req, res, next) => {
@@ -41,8 +34,6 @@ exports.deleteSauce = (req, res, next) => {
         })
         .catch(error => res.status(500).json({ error }));
 };
-
-
 
 //Display all sauces
 
@@ -77,8 +68,6 @@ exports.findSauce = (req, res, next) => {
         })
         .catch(error => res.status(400).json({ error }));
 }
-
-
 
 //Modify a sauce
 
